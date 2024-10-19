@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> College Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: burlywood;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            background-color: rgb(69, 146, 47);
+            margin: auto;
+        }
+        label {
+            display: block;
+            background-color: #bebcc4;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #473434;
+
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: brown;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #154246;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Students Feedback Form</h1>
+<form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="0" max="120">
+    
+    <label for="roll no">Roll No</label>
+    <input type="number" id="roll no" name="roll no" min="0" max="5100">
+
+    <label for="Course">What is your course?</label>
+    <select id="Course" name="Course" required>
+        <option value="" disabled selected>Select your option</option>
+        <option value="Bca">Bca</option>
+        <option value="Btech cse">Btech cse</option>
+        <option value="Bcom">Bcom</option>
+        <option value="Bba">Bba</option>
+        <option value="Mba">Mba</option>
+    </select>
+
+    <label for="feedback">Additional Feedback:</label>
+    <textarea id="feedback" name="feedback" rows="4" placeholder="Your comments here..."></textarea>
+
+    <label>Would you recommend us to others?</label>
+    <label><input type="radio" name="recommend" value="yes" required> Yes</label>
+    <label><input type="radio" name="recommend" value="no"> No</label>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
