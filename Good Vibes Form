@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Vibe Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        h1 {
+            color: #ff6f61;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff3d30;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Good Vibes Only!</h1>
+    <form id="vibeForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="number" id="scale" placeholder="On a Scale of 1-10,how good was it" required>
+        <label for="Where Did It Happen">Where Did It Happen?</label>
+        <select id="Where Did It Happen" name="Whre Did It Happen" required>
+            <option value="" disabled selected>Select your option</option>
+            <option value="Home">Home</option>
+            <option value="College">College</option>
+            <option value="Park">Park</option>
+            <option value="Restaurant">Restaurant</option>
+            <option value="Library">Library</option>
+            <label for="At what time of day did it happen">At what time of day did it happen</label>
+       
+
+        </select>
+        <textarea id="message" rows="4" placeholder="Share something positive!" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('vibeForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Thank you for sharing the good vibes, ' + document.getElementById('name').value + '!');
+    });
+</script>
+
+</body>
+</html>

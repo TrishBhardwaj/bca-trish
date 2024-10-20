@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h1>Netflix</h1>
+    <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Movies</a>
+        <a href="#">My List</a>
+        <a href="#">Log Out</a>
+    </nav>
+</header>
+
+<div class="banner">
+    <h2>Featured Movie Title</h2>
+    <p>Watch now! Don’t miss it!</p>
+</div>
+
+<div class="row">
+    <h3>Trending Now</h3>
+    <div class="movie-list">
+        <div class="movie-item"></div>
+        <div class="movie-item"></div>
+        <div class="movie-item"></div>
+        <div class="movie-item"></div>
+        <div class="movie-item"></div>
+        <div class="movie-item"></div>
+    </div>
+</div>
+
+<div class="row">
+    <h3>Popular on Netflix</h3>
+    <div class="movie-list">
+        <div class="movie-item"></div>
+        <div class="movie-item"></div>
+        <div class="movie-item"></div>
+        <div class="movie-item"></div>
+        <div class="movie-item"></div>
+        <div class="movie-item"></div>
+    </div>
+</div>
+
+</body>
+</html>
